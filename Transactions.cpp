@@ -52,7 +52,7 @@ string Transaction::getString(){ // converts the blocks contents into one string
 }
 
 string Transaction::getNonceString(){
-    return to_String(getAmount)) + sender + receiver + nonce;
+    return to_string(getAmount()) + sender + receiver + nonce;
 }
 
 void transactionChain::addTransaction(int amount, string sender, string receiver){
