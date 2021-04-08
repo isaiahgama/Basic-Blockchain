@@ -42,7 +42,7 @@ void Transaction::findNonce(){ // generates a random nonce, sets the blocks nonc
     char c = char(rand()%26+97);
     char d = char(rand()%26+97);
     string str1(1,c);
-    string str2(2,d);
+    string str2(1,d);
     string str = str1 + str2;
     this->nonce = str;
 }
