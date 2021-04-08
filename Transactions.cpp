@@ -51,6 +51,10 @@ string Transaction::getString(){ // converts the blocks contents into one string
     return to_string(getAmount()) + sender + receiver + hash + nonce;
 }
 
+string Transaction::getNonceString(){
+    return to_String(getAmount)) + sender + receiver + nonce;
+}
+
 void transactionChain::addTransaction(int amount, string sender, string receiver){
 
     // create the transaction
@@ -68,7 +72,7 @@ void transactionChain::addTransaction(int amount, string sender, string receiver
     bool foundNonce = false;
     while(!foundNonce){ // finds a nonce that satisfies the last char being 0
         tmp->findNonce();
-        temp = sha256(tmp->getString());
+        temp = sha256(tmp->getNonceString());
         if(temp[temp.size()-1]=='0'){
             foundNonce=true;
         }

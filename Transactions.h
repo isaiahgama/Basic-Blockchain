@@ -33,6 +33,7 @@ class Transaction{
     }
     void findNonce();
     string getString();
+    string getNonceString();
     void setHash(string h);
 
 
